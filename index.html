@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Di Napoli — Pizzeria napolitaine à Ennasr, Tunis</title>
+<meta name="description" content="Pizza napolitaine à Ennasr, Tunis. Pâte façonnée à la main, four allumé 24h/24. Sur place, à emporter ou livré par Glovo.">
+<meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3ece0" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Di Napoli — Pizzeria napolitaine à Tunis">
+<meta property="og:description" content="Pâte façonnée à la main, tomate, mozzarella, basilic. Le four tourne jour et nuit à Ennasr, Tunis.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CclipPath id='c'%3E%3Ccircle cx='32' cy='32' r='30'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23c)'%3E%3Crect width='21.4' height='64' fill='%233f5136'/%3E%3Crect x='21.4' width='21.4' height='64' fill='%23f3ece0'/%3E%3Crect x='42.8' width='21.4' height='64' fill='%23a8432a'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='18' fill='%231e1a14'/%3E%3Ctext x='32' y='39' font-family='Georgia,serif' font-size='18' font-weight='700' text-anchor='middle' fill='%23f3ece0'%3EDN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Instrument+Sans:ital,wght@0,400..700;1,400..600&family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+(function () {
+  var t = "dark";
+  try {
+    var saved = localStorage.getItem("dn-theme");
+    if (saved === "light" || saved === "dark") t = saved;
+    else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) t = "light";
+  } catch (e) {}
+  document.documentElement.dataset.theme = t;
+  document.documentElement.style.colorScheme = t;
+  document.documentElement.classList.add("js");
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Di Napoli","servesCuisine":["Pizza","Italian","Fast Food"],"telephone":"+21629153838","address":{"@type":"PostalAddress","streetAddress":"Ennasr","addressLocality":"Tunis","addressCountry":"TN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"3.9","reviewCount":"115"},"sameAs":["https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis"],"priceRange":"$$"}
+</script>
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.loader{display:none}.grain{display:none}</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-mark"><span>DN</span></div>
+  <p class="loader-name">Di Napoli</p>
+  <div class="loader-bar"><i></i></div>
+</div>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><i>DN</i></span>
+      <span class="brand-name">Di Napoli</span>
+      <span class="brand-sub">Ennasr · Tunis</span>
+    </a>
+
+    <nav class="nav" id="mainNav" data-i18n-aria="nav.aria" aria-label="Navigation principale">
+      <a href="#top" data-i18n="nav.home">Accueil</a>
+      <a href="#carte" data-i18n="nav.menu">La carte</a>
+      <a href="#histoire" data-i18n="nav.story">Notre histoire</a>
+      <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+      <a href="#avis" data-i18n="nav.reviews">Avis</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang" id="lang">
+        <button class="icon-btn lang-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria="common.language" aria-label="Langue">
+          <span id="langCode">FR</span>
+          <svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox" aria-label="Langue">
+          <li><button type="button" role="option" data-lang="fr" aria-selected="true"><span>Français</span><b>FR</b></button></li>
+          <li><button type="button" role="option" data-lang="en" aria-selected="false"><span>English</span><b>EN</b></button></li>
+          <li><button type="button" role="option" data-lang="it" aria-selected="false"><span>Italiano</span><b>IT</b></button></li>
+          <li><button type="button" role="option" data-lang="ar" aria-selected="false"><span>العربية</span><b>AR</b></button></li>
+        </ul>
+      </div>
+
+      <button class="icon-btn theme-btn" id="themeBtn" type="button" aria-pressed="false" aria-label="Changer de thème">
+        <svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.6 6.6 0 0 0 21 12.8Z"/></svg>
+      </button>
+
+      <a class="btn btn-primary header-order" href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo>
+        <span data-i18n="common.order">Commander</span>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobileMenu" data-i18n-aria="common.menuOpen" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-head">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><i>DN</i></span>
+      <span class="brand-name">Di Napoli</span>
+    </a>
+    <button class="icon-btn" id="menuClose" type="button" data-i18n-aria="common.menuClose" aria-label="Fermer le menu">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" data-i18n-aria="nav.aria" aria-label="Navigation principale">
+    <a href="#top"><em>01</em><span data-i18n="nav.home">Accueil</span></a>
+    <a href="#carte"><em>02</em><span data-i18n="nav.menu">La carte</span></a>
+    <a href="#histoire"><em>03</em><span data-i18n="nav.story">Notre histoire</span></a>
+    <a href="#galerie"><em>04</em><span data-i18n="nav.gallery">Galerie</span></a>
+    <a href="#avis"><em>05</em><span data-i18n="nav.reviews">Avis</span></a>
+    <a href="#contact"><em>06</em><span data-i18n="nav.contact">Contact</span></a>
+  </nav>
+  <div class="mobile-foot">
+    <div class="mobile-langs">
+      <button type="button" data-set-lang="fr">Français</button>
+      <button type="button" data-set-lang="en">English</button>
+      <button type="button" data-set-lang="it">Italiano</button>
+      <button type="button" data-set-lang="ar">العربية</button>
+    </div>
+    <div class="mobile-contact">
+      <a href="tel:+21629153838">+216 29 153 838</a>
+      <span data-i18n="common.open247">Ouvert 24h/24</span>
+    </div>
+    <a class="btn btn-primary mobile-order" href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo>
+      <span data-i18n="common.glovo">Commander sur Glovo</span>
+    </a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="kicker" data-reveal>
+          <span class="kicker-num">01</span>
+          <i aria-hidden="true"></i>
+          <span data-i18n="hero.kicker">Ennasr, Tunis · Ouvert 24h/24</span>
+        </p>
+        <h1 class="hero-title" data-i18n-html="hero.title" data-reveal style="--d:.05s"><span class="line">Pizza napolitaine.</span><em class="line">À toute heure.</em></h1>
+        <p class="hero-lede" data-i18n="hero.lede" data-reveal style="--d:.12s">Pâte façonnée à la main, tomate, mozzarella, basilic. Le four tourne jour et nuit à Ennasr — pour un déjeuner pressé comme pour une faim de 3 h du matin.</p>
+        <div class="hero-facts" data-reveal style="--d:.18s">
+          <div class="fact"><b>24/7</b><span data-i18n="hero.fact1">Le four ne s’éteint pas</span></div>
+          <div class="fact"><b>3,9<small>/5</small></b><span data-i18n="hero.fact2">115 avis Google</span></div>
+          <div class="fact"><b>4</b><span data-i18n="hero.fact3">ingrédients dans la pâte</span></div>
+        </div>
+        <div class="hero-actions" data-reveal style="--d:.24s">
+          <a class="btn btn-primary" href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo>
+            <span data-i18n="common.glovo">Commander sur Glovo</span>
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#carte">
+            <span data-i18n="common.menuBtn">Voir la carte</span>
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6"/></svg>
+          </a>
+          <a class="btn btn-icon btn-ghost wa-btn" href="https://wa.me/21629153838" data-wa data-i18n-aria="common.whatsapp" aria-label="WhatsApp">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L4 20l1.2-4.5A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.4 2.7 2.3 4.6 5 5l1.2-1.4 2 1.1c-.2 1.2-1.1 1.9-2.4 1.9-3.6 0-6.6-3-6.6-6.6 0-1.3.7-2.2 1.9-2.4l1.1 2-1.4 1.2"/></svg>
+          </a>
+        </div>
+        <p class="hero-note" data-i18n="hero.note" data-reveal style="--d:.3s">Sur place, à emporter, ou livré par Glovo.</p>
+      </div>
+
+      <div class="hero-art" id="heroArt" aria-hidden="true">
+        <figure class="hero-plate">
+          <span class="plate"></span>
+          <svg class="orbit-text" viewBox="0 0 200 200">
+            <defs><path id="orbitPath" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0"/></defs>
+            <text><textPath href="#orbitPath" startOffset="0">DI NAPOLI · TUNISI · PIZZA NAPOLETANA · SEMPRE APERTA · </textPath></text>
+          </svg>
+          <div class="pizza-scene">
+            <div class="pizza-float">
+              <div class="pizza" id="pizza">
+                <div class="pizza-spin">
+                  <i class="p-base" style="--z:-6px"></i><i class="p-base" style="--z:-12px"></i><i class="p-base" style="--z:-18px"></i>
+                  <i class="p-crust"></i><i class="p-sauce"></i><i class="p-cheese"></i>
+                  <i class="pep" style="--x:22%;--y:28%"></i><i class="pep" style="--x:53%;--y:18%"></i><i class="pep" style="--x:72%;--y:38%"></i><i class="pep" style="--x:60%;--y:64%"></i><i class="pep" style="--x:32%;--y:68%"></i><i class="pep" style="--x:18%;--y:52%"></i><i class="pep" style="--x:44%;--y:44%"></i>
+                  <i class="basil-leaf" style="--x:38%;--y:26%;--r:-25deg"></i><i class="basil-leaf" style="--x:62%;--y:48%;--r:40deg"></i><i class="basil-leaf" style="--x:28%;--y:48%;--r:110deg"></i><i class="basil-leaf" style="--x:48%;--y:74%;--r:-60deg"></i>
+                  <i class="olive" style="--x:68%;--y:22%"></i><i class="olive" style="--x:24%;--y:38%"></i><i class="olive" style="--x:54%;--y:56%"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pizza-shadow"></div>
+            <div class="steam"><span></span><span></span><span></span></div>
+          </div>
+          <figcaption class="hero-plate-cap"><span>Fatta a mano</span><span>Forno caldo</span></figcaption>
+        </figure>
+        <span class="chip chip-1">Fatta a mano</span>
+        <span class="chip chip-2">Forno caldo</span>
+        <span class="chip chip-3">Sempre aperta</span>
+      </div>
+    </div>
+
+    <div class="wrap hero-foot">
+      <p class="hero-foot-note">Di Napoli — Ennasr, Tunis</p>
+      <a class="scroll-hint" href="#carte"><span data-i18n="hero.scroll">Découvrir</span><i aria-hidden="true"></i></a>
+      <p class="hero-foot-note">24h/24 · 7j/7</p>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Pizza <i></i> Passione <i></i> Napoli <i></i> Amore <i></i> Forno <i></i> Famiglia <i></i> Tradizione <i></i> Buon appetito <i></i></span>
+      <span>Pizza <i></i> Passione <i></i> Napoli <i></i> Amore <i></i> Forno <i></i> Famiglia <i></i> Tradizione <i></i> Buon appetito <i></i></span>
+    </div>
+  </div>
+
+  <section class="section features-section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker" data-reveal><i aria-hidden="true"></i><span data-i18n="feat.kicker">Ce qui ne change pas</span></p>
+        <h2 data-reveal data-i18n="feat.title" style="--d:.05s">Quatre gestes, tous les jours.</h2>
+        <p data-reveal data-i18n="feat.intro" style="--d:.1s">Pas de discours. Juste ce que nous faisons à chaque service, depuis l’ouverture.</p>
+      </div>
+      <div class="features">
+        <article class="feature" data-reveal style="--d:0s">
+          <span class="feature-num">01</span>
+          <div class="feature-body">
+            <h3 data-i18n="feat.1.title">Le four tourne en continu</h3>
+            <p data-i18n="feat.1.text">Une faim à minuit, un déjeuner à 15 h, un dimanche après-midi : la cuisine ne ferme pas.</p>
+          </div>
+        </article>
+        <article class="feature" data-reveal style="--d:.08s">
+          <span class="feature-num">02</span>
+          <div class="feature-body">
+            <h3 data-i18n="feat.2.title">La pâte, à la main</h3>
+            <p data-i18n="feat.2.text">Farine, eau, sel, levure. On la pétrit, on la laisse lever, on l’étire sur le poing.</p>
+          </div>
+        </article>
+        <article class="feature" data-reveal style="--d:.16s">
+          <span class="feature-num">03</span>
+          <div class="feature-body">
+            <h3 data-i18n="feat.3.title">Des portions franches</h3>
+            <p data-i18n="feat.3.text">De la garniture jusqu’au bord. On préfère en mettre trop que pas assez.</p>
+          </div>
+        </article>
+        <article class="feature" data-reveal style="--d:.24s">
+          <span class="feature-num">04</span>
+          <div class="feature-body">
+            <h3 data-i18n="feat.4.title">Ici, à emporter, livré</h3>
+            <p data-i18n="feat.4.text">Venez à Ennasr, appelez-nous, ou commandez sur Glovo. Comme vous voulez.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section menu-section" id="carte">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker" data-reveal><i aria-hidden="true"></i><span data-i18n="menu.kicker">La carte</span></p>
+        <h2 data-reveal data-i18n="menu.title" style="--d:.05s">Tout ce qu’on sert.</h2>
+        <p data-reveal data-i18n="menu.intro" style="--d:.1s">Pizzas, ciabattas, burgers, baguettes. Les prix sont en dinars, sans surprise.</p>
+      </div>
+
+      <div class="popular-wrap" data-reveal>
+        <div class="popular-head">
+          <h3 class="script" data-i18n="common.popular">Les plus commandés</h3>
+          <span class="line" aria-hidden="true"></span>
+        </div>
+        <div class="popular" id="popularGrid"></div>
+      </div>
+
+      <div class="menu-toolbar" data-reveal>
+        <div class="tabs" id="menuTabs" role="tablist" data-i18n-aria="menu.tabAria" aria-label="Catégories de la carte"></div>
+        <label class="search">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="menuSearch" data-i18n-placeholder="common.search" data-i18n-aria="menu.searchAria" placeholder="Rechercher un plat…" aria-label="Rechercher un plat">
+        </label>
+      </div>
+      <p class="menu-count" id="menuCount" aria-live="polite"></p>
+      <div class="menu-grid" id="menuPanel" role="tabpanel" data-i18n-aria="menu.panelAria" aria-label="Plats de la carte"></div>
+      <noscript><p class="center" data-i18n="common.priceNote">Prix en dinars tunisiens (DT).</p></noscript>
+      <div class="menu-foot">
+        <p data-i18n="common.priceNote">Prix en dinars tunisiens (DT).</p>
+        <a class="btn btn-primary" href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo><span data-i18n="common.glovo">Commander sur Glovo</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section story-section" id="histoire">
+    <div class="wrap">
+      <div class="story-grid">
+        <div class="story-media" data-reveal>
+          <div class="story-photo">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=80" alt="Pizza napolitaine sortie du four" loading="lazy" width="900" height="1100">
+            <span class="photo-tag"><i class="pulse" aria-hidden="true"></i><span data-i18n="common.openNow">Ouvert maintenant</span></span>
+          </div>
+          <div class="story-mini">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=600&q=80" alt="Détail d’une pizza fraîchement préparée" loading="lazy" width="600" height="600">
+          </div>
+          <span class="story-stamp script" aria-hidden="true">Napoli</span>
+        </div>
+        <div class="story-copy">
+          <p class="kicker" data-reveal><i aria-hidden="true"></i><span data-i18n="story.kicker">Naples, puis Ennasr</span></p>
+          <h2 data-reveal data-i18n="story.title" style="--d:.05s">La même recette depuis toujours.</h2>
+          <p data-reveal data-i18n="story.p1" style="--d:.1s">La pizza napolitaine ne supporte pas les raccourcis : une pâte vivante, un four très chaud, trois ingrédients dessus. C’est tout ce que nous défendons.</p>
+          <p data-reveal data-i18n="story.p2" style="--d:.15s">Le reste, c’est le temps. Celui qu’on laisse à la pâte, et celui qu’on prend pour vous servir, même à 4 h du matin.</p>
+          <div class="story-stats" data-reveal style="--d:.2s">
+            <div class="stat"><b>4</b><span data-i18n="story.stat1">ingrédients dans la pâte</span></div>
+            <div class="stat"><b>24/7</b><span data-i18n="story.stat2">service continu</span></div>
+            <div class="stat"><b><span data-count="115">0</span></b><span data-i18n="story.stat3">avis Google</span></div>
+            <div class="stat"><b><span data-count="3.9" data-decimals="1">0</span><small>/5</small></b><span data-i18n="story.stat4">note moyenne</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-flips">
+        <div class="flip" data-reveal style="--d:0s">
+          <button type="button" class="flip-btn" aria-pressed="false">
+            <span class="flip-inner">
+              <span class="flip-face flip-front">
+                <span class="flip-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></span>
+                <strong data-i18n="story.card1.title">La Margherita</strong>
+                <small><span data-i18n="story.flipHint">Touchez pour lire</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2 6"/><path d="M20 5v6h-6"/></svg></small>
+              </span>
+              <span class="flip-face flip-back"><span data-i18n="story.card1.text">La légende raconte qu’en 1889, un pizzaiolo de Naples a créé pour la reine Marguerite une pizza aux couleurs du drapeau italien : tomate, mozzarella et basilic.</span></span>
+            </span>
+          </button>
+        </div>
+        <div class="flip" data-reveal style="--d:.08s">
+          <button type="button" class="flip-btn" aria-pressed="false">
+            <span class="flip-inner">
+              <span class="flip-face flip-front">
+                <span class="flip-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c3-1 5-3 6-6 1 3 3 5 6 6 1-4 0-8-3-11-2 1-4 1-6 0-3 3-4 7-3 11Z"/></svg></span>
+                <strong data-i18n="story.card2.title">La pâte</strong>
+                <small><span data-i18n="story.flipHint">Touchez pour lire</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2 6"/><path d="M20 5v6h-6"/></svg></small>
+              </span>
+              <span class="flip-face flip-back"><span data-i18n="story.card2.text">La pâte napolitaine ne demande que quatre ingrédients : farine, eau, sel et levure. Le reste, c’est le temps de repos et le geste du pizzaiolo.</span></span>
+            </span>
+          </button>
+        </div>
+        <div class="flip" data-reveal style="--d:.16s">
+          <button type="button" class="flip-btn" aria-pressed="false">
+            <span class="flip-inner">
+              <span class="flip-face flip-front">
+                <span class="flip-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.9-5.4 2.9 1-6-4.4-4.3 6.1-.9Z"/></svg></span>
+                <strong data-i18n="story.card3.title">L’UNESCO</strong>
+                <small><span data-i18n="story.flipHint">Touchez pour lire</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2 6"/><path d="M20 5v6h-6"/></svg></small>
+              </span>
+              <span class="flip-face flip-back"><span data-i18n="story.card3.text">En 2017, l’art du pizzaiolo napolitain a été inscrit par l’UNESCO au patrimoine culturel immatériel de l’humanité.</span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="galerie">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker" data-reveal><i aria-hidden="true"></i><span data-i18n="gallery.kicker">Galerie</span></p>
+        <h2 data-reveal data-i18n="gallery.title" style="--d:.05s">Sorti du four il y a une minute.</h2>
+        <p data-reveal data-i18n="gallery.intro" style="--d:.1s">Pas de mise en scène. Ce que vous voyez, c’est ce qui sort de la cuisine.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="shot shot-big" type="button" data-cap="gallery.cap1" data-i18n-aria="gallery.view" aria-label="Agrandir l’image">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1100&q=80" alt="Pizza fraîchement sortie du four" loading="lazy" width="1100" height="900">
+          <span class="shot-overlay"><span data-i18n="gallery.cap1">Pizza sortie du four</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></span>
+        </button>
+        <button class="shot" type="button" data-cap="gallery.cap2" data-i18n-aria="gallery.view" aria-label="Agrandir l’image">
+          <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80" alt="Pâte façonnée à la main" loading="lazy" width="800" height="800">
+          <span class="shot-overlay"><span data-i18n="gallery.cap2">Pâte façonnée à la main</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></span>
+        </button>
+        <button class="shot" type="button" data-cap="gallery.cap3" data-i18n-aria="gallery.view" aria-label="Agrandir l’image">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Ingrédients frais italiens" loading="lazy" width="800" height="800">
+          <span class="shot-overlay"><span data-i18n="gallery.cap3">Ingrédients frais</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></span>
+        </button>
+        <button class="shot" type="button" data-cap="gallery.cap4" data-i18n-aria="gallery.view" aria-label="Agrandir l’image">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="L’ambiance chaleureuse du restaurant" loading="lazy" width="800" height="800">
+          <span class="shot-overlay"><span data-i18n="gallery.cap4">L’ambiance Di Napoli</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></span>
+        </button>
+        <button class="shot" type="button" data-cap="gallery.cap5" data-i18n-aria="gallery.view" aria-label="Agrandir l’image">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Table dressée pour partager" loading="lazy" width="800" height="800">
+          <span class="shot-overlay"><span data-i18n="gallery.cap5">La dolce vita</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></span>
+        </button>
+        <button class="shot shot-wide" type="button" data-cap="gallery.cap6" data-i18n-aria="gallery.view" aria-label="Agrandir l’image">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=80" alt="Pizza à partager entre amis" loading="lazy" width="1000" height="700">
+          <span class="shot-overlay"><span data-i18n="gallery.cap6">À partager</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reviews-section" id="avis">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker" data-reveal><i aria-hidden="true"></i><span data-i18n="reviews.kicker">Avis</span></p>
+        <h2 data-reveal data-i18n="reviews.title" style="--d:.05s">3,9 sur 5. 115 avis.</h2>
+        <p data-reveal data-i18n="reviews.intro" style="--d:.1s">Une note publique, sans filtre. Voici ce qui revient le plus souvent.</p>
+      </div>
+      <div class="reviews-panel" data-reveal>
+        <div class="rating-big">
+          <div class="rating-ring" style="--rating:78">
+            <span class="rating-num">3,9<small>/5</small></span>
+          </div>
+          <div class="stars" data-i18n-aria="reviews.starsAria" aria-label="3,9 sur 5"><span class="stars-base">★★★★★</span><span class="stars-fill" style="width:78%">★★★★★</span></div>
+          <p class="rating-label" data-i18n="common.reviewsCount">115 avis Google</p>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Di%20Napoli%20pizzeria%20Tunis" target="_blank" rel="noopener">
+            <span data-i18n="common.readReviews">Lire les avis</span>
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+          </a>
+        </div>
+        <div class="reviews-side">
+          <h3 data-i18n="reviews.highlightTitle">Ce qui revient le plus</h3>
+          <div class="highlights">
+            <div class="highlight"><span class="h-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 6 6 10a6 6 0 0 1-12 0c0-4 3-6 6-10Z"/></svg></span><span data-i18n="reviews.h1">Portions généreuses</span></div>
+            <div class="highlight"><span class="h-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span data-i18n="reviews.h2">Ouvert à toute heure</span></div>
+            <div class="highlight"><span class="h-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><span data-i18n="reviews.h3">À emporter &amp; livraison</span></div>
+            <div class="highlight"><span class="h-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7 12h10M12 7v10"/></svg></span><span data-i18n="reviews.h4">Pizzas napolitaines</span></div>
+          </div>
+          <p class="reviews-note" data-i18n="reviews.note">Note publique Google · 115 avis</p>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Di%20Napoli%20pizzeria%20Tunis" target="_blank" rel="noopener"><span data-i18n="reviews.cta">Lire tous les avis sur Google</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker" data-reveal><i aria-hidden="true"></i><span data-i18n="contact.kicker">Contact</span></p>
+        <h2 data-reveal data-i18n="contact.title" style="--d:.05s">Passez, appelez, commandez.</h2>
+        <p data-reveal data-i18n="contact.intro" style="--d:.1s">Nous sommes à Ennasr, à Tunis. Le four est allumé maintenant.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-grid">
+            <article class="info-card" data-reveal style="--d:0s">
+              <h3 data-i18n="common.address">Adresse</h3>
+              <p data-i18n="contact.addrText">Ennasr, Tunis — V5RC+3M8</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=V5RC%2B3M8%20Tunis" target="_blank" rel="noopener" data-i18n="common.directions">Ouvrir l’itinéraire</a>
+            </article>
+            <article class="info-card" data-reveal style="--d:.06s">
+              <h3 data-i18n="common.hours">Horaires</h3>
+              <p data-i18n="contact.hoursText">Tous les jours, 24h/24. Service continu, vente à emporter.</p>
+              <span class="local-time"><span data-i18n="contact.localTime">Heure à Tunis</span> · <b id="localTime">--:--</b></span>
+            </article>
+            <article class="info-card" data-reveal style="--d:.12s">
+              <h3 data-i18n="common.phone">Téléphone</h3>
+              <p><a href="tel:+21629153838" dir="ltr">+216 29 153 838</a></p>
+              <a href="tel:+21629153838" data-i18n="common.call">Appeler</a>
+            </article>
+            <article class="info-card" data-reveal style="--d:.18s">
+              <h3 data-i18n="common.order">Commander</h3>
+              <p data-i18n="contact.orderText">En ligne avec Glovo, ou directement par WhatsApp.</p>
+              <a href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo data-i18n="common.glovo">Commander sur Glovo</a>
+            </article>
+            <div class="map-card" data-reveal style="--d:.24s">
+              <div class="map-art" aria-hidden="true">
+                <span class="map-road r1"></span><span class="map-road r2"></span><span class="map-road r3"></span>
+                <span class="map-pin"><i></i></span>
+                <span class="map-label">Ennasr · Tunis</span>
+              </div>
+              <a class="btn btn-ghost map-btn" href="https://www.google.com/maps/search/?api=1&query=V5RC%2B3M8%20Tunis" target="_blank" rel="noopener">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span data-i18n="contact.mapCta">Ouvrir dans Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal style="--d:.1s">
+          <p class="kicker"><i aria-hidden="true"></i><span data-i18n="contact.formKicker">Un message ?</span></p>
+          <h3 data-i18n="contact.formTitle">Écrivez-nous sur WhatsApp</h3>
+          <p class="form-text" data-i18n="contact.formText">Laissez votre nom et votre message : WhatsApp s’ouvrira avec votre texte prêt à envoyer.</p>
+          <form id="waForm" novalidate>
+            <label class="field">
+              <span data-i18n="contact.name">Votre nom</span>
+              <input type="text" id="waName" name="name" autocomplete="name" required data-i18n-placeholder="contact.namePh" placeholder="Ex. Amine">
+            </label>
+            <label class="field">
+              <span data-i18n="contact.msg">Votre message</span>
+              <textarea id="waMsg" name="message" rows="4" required data-i18n-placeholder="contact.msgPh" placeholder="Je voudrais commander une pizza…"></textarea>
+            </label>
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <button class="btn btn-primary form-submit" type="submit">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L4 20l1.2-4.5A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.4 2.7 2.3 4.6 5 5l1.2-1.4 2 1.1c-.2 1.2-1.1 1.9-2.4 1.9-3.6 0-6.6-3-6.6-6.6 0-1.3.7-2.2 1.9-2.4l1.1 2-1.4 1.2"/></svg>
+              <span data-i18n="contact.send">Envoyer sur WhatsApp</span>
+            </button>
+            <p class="form-note" data-i18n="contact.formNote">Aucun compte requis. Vous pourrez relire votre message avant l’envoi.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="wrap cta-inner">
+      <p class="kicker" data-reveal><i aria-hidden="true"></i><span data-i18n="cta.kicker">Il est quelle heure ?</span></p>
+      <h2 class="script" data-reveal data-i18n="cta.script" style="--d:.05s">Buon appetito!</h2>
+      <p class="cta-title" data-reveal data-i18n="cta.title" style="--d:.1s">Le four tourne encore.</p>
+      <p class="cta-text" data-reveal data-i18n="cta.text" style="--d:.15s">Commandez sur Glovo, appelez le +216 29 153 838, ou passez à Ennasr. On vous attend.</p>
+      <div class="cta-actions" data-reveal style="--d:.2s">
+        <a class="btn btn-primary" href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo><span data-i18n="common.glovo">Commander sur Glovo</span></a>
+        <a class="btn btn-ghost" href="tel:+21629153838"><span data-i18n="common.call">Appeler</span></a>
+        <a class="btn btn-ghost" href="https://wa.me/21629153838" data-wa><span data-i18n="common.whatsapp">WhatsApp</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top"><span class="brand-mark"><i>DN</i></span><span class="brand-name">Di Napoli</span></a>
+      <p data-i18n="footer.tagline">Pizzeria napolitaine à Ennasr, Tunis. Ouverte 24h/24, tous les jours.</p>
+      <div class="footer-social">
+        <a href="tel:+21629153838" data-i18n-aria="common.call" aria-label="Appeler"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></svg></a>
+        <a href="https://wa.me/21629153838" data-wa data-i18n-aria="common.whatsapp" aria-label="WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L4 20l1.2-4.5A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.4 2.7 2.3 4.6 5 5l1.2-1.4 2 1.1c-.2 1.2-1.1 1.9-2.4 1.9-3.6 0-6.6-3-6.6-6.6 0-1.3.7-2.2 1.9-2.4l1.1 2-1.4 1.2"/></svg></a>
+        <a href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo data-i18n-aria="common.glovo" aria-label="Glovo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Di%20Napoli%20pizzeria%20Tunis" target="_blank" rel="noopener" data-i18n-aria="contact.mapCta" aria-label="Google Maps"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3 data-i18n="footer.nav">Navigation</h3>
+      <a href="#top" data-i18n="nav.home">Accueil</a>
+      <a href="#carte" data-i18n="nav.menu">La carte</a>
+      <a href="#histoire" data-i18n="nav.story">Notre histoire</a>
+      <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+      <a href="#avis" data-i18n="nav.reviews">Avis</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h3 data-i18n="footer.contact">Contact</h3>
+      <a href="tel:+21629153838" dir="ltr">+216 29 153 838</a>
+      <a href="https://wa.me/21629153838" data-wa>WhatsApp</a>
+      <a href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo>Glovo</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=V5RC%2B3M8%20Tunis" target="_blank" rel="noopener">Ennasr, Tunis</a>
+    </div>
+    <div class="footer-col">
+      <h3 data-i18n="footer.hours">Horaires</h3>
+      <p class="footer-hours" data-i18n-html="footer.hoursText">Lundi – Dimanche<br>24h/24</p>
+      <span class="footer-open"><i class="pulse" aria-hidden="true"></i><span data-i18n="common.open247">Ouvert 24h/24</span></span>
+      <div class="footer-langs">
+        <button type="button" data-set-lang="fr">FR</button>
+        <button type="button" data-set-lang="en">EN</button>
+        <button type="button" data-set-lang="it">IT</button>
+        <button type="button" data-set-lang="ar">AR</button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> Di Napoli. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    <p data-i18n="footer.made">Fait à Tunis, avec de la farine et du temps.</p>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+21629153838"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></svg><span data-i18n="common.call">Appeler</span></a>
+  <a href="https://wa.me/21629153838" data-wa><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L4 20l1.2-4.5A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.4 2.7 2.3 4.6 5 5l1.2-1.4 2 1.1c-.2 1.2-1.1 1.9-2.4 1.9-3.6 0-6.6-3-6.6-6.6 0-1.3.7-2.2 1.9-2.4l1.1 2-1.4 1.2"/></svg><span data-i18n="common.whatsapp">WhatsApp</span></a>
+  <a class="bar-order" href="https://glovoapp.com/en/tn/tunis/stores/di-napoli-ennasr-tunis" data-glovo><span data-i18n="common.order">Commander</span></a>
+</div>
+
+<button class="to-top" id="toTop" type="button" data-i18n-aria="common.backTop" aria-label="Retour en haut">
+  <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg>
+</button>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" data-i18n-aria="gallery.lightboxAria" aria-label="Galerie d’images">
+  <button class="lb-close" id="lbClose" type="button" data-i18n-aria="common.close" aria-label="Fermer"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbPrev" type="button" data-i18n-aria="common.prev" aria-label="Précédent"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <figure class="lb-figure">
+    <img id="lbImg" alt="">
+    <figcaption><span id="lbCap"></span><span id="lbCount"></span></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" type="button" data-i18n-aria="common.next" aria-label="Suivant"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="i18n.js"></script>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
